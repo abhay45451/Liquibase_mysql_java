@@ -1,0 +1,20 @@
+infrastructureDefinition:
+  name: deq_infra
+  identifier: deq_infra
+  orgIdentifier: default
+  projectIdentifier: Liquibase_mysql
+  environmentRef: dev
+  deploymentType: Ssh
+  type: SshWinRmAws
+  spec:
+    credentialsRef: account.sshcred
+    connectorRef: account.aws_connector
+    region: ap-south-1
+    awsInstanceFilter:
+      tags: {}
+      vpcs:
+        - vpc-05f42dea53337d77c
+    hostConnectionType: PublicIP
+    instanceType: Aws
+    targetedHosts: <+input>
+  allowSimultaneousDeployments: true
