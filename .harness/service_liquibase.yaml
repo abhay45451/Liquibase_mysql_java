@@ -1,0 +1,5 @@
+service:
+  name: service_liquibase
+  identifier: service_liquibase
+  orgIdentifier: default
+  projectIdentifier: Liquibase_mysql
