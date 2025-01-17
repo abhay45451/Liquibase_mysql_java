@@ -3,3 +3,18 @@ service:
   identifier: service_liquibase
   orgIdentifier: default
   projectIdentifier: Liquibase_mysql
+  serviceDefinition:
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: account.Artifactory_org
+                artifactDirectory: /
+                artifactPath: <+input>
+                repository: harness-project-libs-snapshot-local
+                repositoryFormat: generic
+              identifier: harness_liquibase
+              type: ArtifactoryRegistry
+    type: Ssh
