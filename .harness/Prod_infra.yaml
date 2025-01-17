@@ -1,0 +1,19 @@
+infrastructureDefinition:
+  name: Prod_infra
+  identifier: Prod_infra
+  orgIdentifier: default
+  projectIdentifier: Liquibase_mysql
+  environmentRef: prod
+  deploymentType: Ssh
+  type: SshWinRmAws
+  spec:
+    credentialsRef: account.sshcred
+    connectorRef: account.aws_connector
+    region: ap-south-1
+    awsInstanceFilter:
+      tags: {}
+      vpcs:
+        - vpc-05f42dea53337d77c
+    hostConnectionType: PublicIP
+    instanceType: Aws
+  allowSimultaneousDeployments: true
