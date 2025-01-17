@@ -1,0 +1,6 @@
+environment:
+  name: Qa
+  identifier: Qa
+  orgIdentifier: default
+  projectIdentifier: Liquibase_mysql
+  type: PreProduction
