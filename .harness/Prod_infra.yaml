@@ -16,4 +16,4 @@ infrastructureDefinition:
         - vpc-05f42dea53337d77c
     hostConnectionType: PublicIP
     instanceType: Aws
-  allowSimultaneousDeployments: true
+  allowSimultaneousDeployments: false
