@@ -12,7 +12,7 @@ service:
             - spec:
                 connectorRef: account.Artifactory_org
                 artifactDirectory: /
-                artifactPath: <+input>
+                artifactPath: bankapp-0.0.1-SNAPSHOT.jar
                 repository: harness-project-libs-snapshot-local
                 repositoryFormat: generic
               identifier: harness_liquibase
