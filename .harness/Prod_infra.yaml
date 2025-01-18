@@ -11,7 +11,8 @@ infrastructureDefinition:
     connectorRef: account.aws_connector
     region: ap-south-1
     awsInstanceFilter:
-      tags: {}
+      tags:
+        Name: prod
       vpcs:
         - vpc-05f42dea53337d77c
     hostConnectionType: PublicIP
