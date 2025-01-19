@@ -13,9 +13,9 @@ infrastructureDefinition:
     awsInstanceFilter:
       tags:
         Name: prod
+        kk: jj
       vpcs:
         - vpc-05f42dea53337d77c
     hostConnectionType: PublicIP
     instanceType: Aws
-    targetedHosts: <+input>
-  allowSimultaneousDeployments: true
+  allowSimultaneousDeployments: false
